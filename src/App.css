@@ -79,6 +79,7 @@ img{
 @media (max-width: 600px) {
   .appDiv{
     max-width: 100%;
+    padding:30px;
   }
   .inputDiv{
     max-width: 100%;
@@ -86,6 +87,7 @@ img{
     column-gap: 10px;
     padding-left: 5px;
     padding-right: 5px;
+    
   }
   .message{
     max-width: 250px;
