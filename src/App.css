@@ -79,7 +79,6 @@ img{
 @media (max-width: 600px) {
   .appDiv{
     max-width: 100%;
-    margin: 20px;
   }
   .inputDiv{
     max-width: 100%;
