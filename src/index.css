@@ -4,3 +4,8 @@ body{
   font-family: Arial;
   overflow: hidden;
 }
+@media (max-width: 600px) {
+  body{
+    width: 500px;
+  }
+}
