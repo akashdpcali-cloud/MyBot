@@ -76,7 +76,7 @@ img{
   
 }
 
-@media (min-width: 550px) {
+@media (min-width: 400px) {
   .appDiv{
     max-width: 850px;
   }
