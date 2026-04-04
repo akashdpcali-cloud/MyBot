@@ -1,0 +1,104 @@
+
+
+.appDiv{
+  display: flex;
+  flex-direction: column;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  row-gap: 20px;
+  height: 100vh;
+}
+
+.inputDiv{
+  display: flex;
+  flex:1;
+  column-gap: 20px;
+  max-height: fit-content;
+  margin-bottom: 20px;
+}
+
+.input{
+  border-radius: 7px;
+  outline: none;
+  padding: 13px 18px;
+  border-width: 1px;
+  font-size: 20px;
+  display: flex;
+  flex: 1;
+  
+}
+.sendBut{
+  background-color: rgb(126, 126, 253);
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 7px;
+}
+
+
+img{
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+}
+.user{
+  display: flex;
+  justify-content: end;
+  column-gap: 20px;
+}
+.robot{
+  display: flex;
+  justify-content: start;
+  column-gap: 20px;
+}
+.message{
+  align-self: center;
+  background-color: rgb(222, 222, 255);
+  padding: 10px 15px;
+  border-radius: 10px;
+  max-width: 550px;
+  font-size: 20px;
+  overflow-wrap: anywhere;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+.messageDiv{
+  flex-grow: 1;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  margin-top: 20px;
+  
+}
+
+@media (max-width: 600px) {
+  .appDiv{
+    max-width: 100%;
+  }
+  .inputDiv{
+    max-width: 100%;
+    margin-bottom: 7px;
+    column-gap: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .message{
+    max-width: 250px;
+  }
+  img{
+    width: 45px;
+    height: 45px;
+  }
+  .user{
+    column-gap: 10px;
+  }
+  .robot{
+    column-gap: 10px;
+  }
+  
+}
