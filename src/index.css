@@ -6,6 +6,6 @@ body{
 }
 @media (max-width: 600px) {
   body{
-    width: 500px;
+    height:100%;
   }
 }
