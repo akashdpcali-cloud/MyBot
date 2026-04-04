@@ -9,10 +9,10 @@ export function ChatInput({ setChatMessages}){
         }
 
         async function getAIResponse(inputMessage) {
-          const res = await fetch("Hello", {
+          const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
             method: "POST",
             headers: {
-              "Authorization": "Bearer Hello", 
+              "Authorization": "Bearer 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", 
               "Content-Type": "application/json"
             },
             body: JSON.stringify({
