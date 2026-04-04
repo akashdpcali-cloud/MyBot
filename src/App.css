@@ -3,7 +3,7 @@
 .appDiv{
   display: flex;
   flex-direction: column;
-  max-width: 850px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   row-gap: 20px;
@@ -76,32 +76,27 @@ img{
   
 }
 
-@media (max-width: 600px) {
+@media (min-width: 601px) {
   .appDiv{
-    max-width: 100%;
-    overflow: hidden;
-    
+    max-width: 850px;
   }
   .inputDiv{
-    max-width: 100%;
-    margin-bottom: 7px;
-    column-gap: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    
+    column-gap: 20px;
   }
   .message{
-    max-width: 250px;
+    max-width: 550px;
   }
   img{
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
   }
+}
   .user{
     column-gap: 10px;
   }
+    
+  
   .robot{
     column-gap: 10px;
   }
   
-}
