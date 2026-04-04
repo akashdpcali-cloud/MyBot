@@ -78,7 +78,7 @@ img{
 
 @media (max-width: 600px) {
   .appDiv{
-    max-width: 100%;
+    max-width: 600px;
     overflow: hidden;
     
   }
