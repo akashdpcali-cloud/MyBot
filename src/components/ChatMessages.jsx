@@ -3,6 +3,15 @@ import { ChatMessage } from './ChatMessage';
 
 export function ChatMessages({chatMessages}){
         const chatMessagesRef=useRef(null);
+        const hasScrolledRef = useRef(false);
+
+        useEffect(() => {
+          if (!hasScrolledRef.current && window.innerWidth < 768) {
+            chatMessagesRef.current.scrollTop = chatMessagesRef.current.scrollHeight;
+            hasScrolledRef.current = true;
+          }
+        }, []);
+
         useEffect(() => {
           const lastMessage = document.getElementById("last-message");
 
