@@ -1,11 +1,21 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 export function ChatInput({ setChatMessages}){
-
+        const inputRef = useRef(null);
         const [inputMessage, setInputMessage]= useState('');
+
+        useEffect(() => {
+          inputRef.current?.focus();
+        }, []);
 
         function saveInputMessage(event){
           setInputMessage(event.target.value);
+        }
+
+        function handleKeyDown(event){
+          if(event.key === 'Enter'){
+            sendMessages();
+          }
         }
 
         async function getAIResponse(inputMessage) {
@@ -56,7 +66,15 @@ export function ChatInput({ setChatMessages}){
         return (
           <div className='inputDiv'>
 
-            <input className='input' placeholder='Type here'  onChange={saveInputMessage} value= {inputMessage} />
+            <input
+            ref={inputRef}
+            className='input'
+            placeholder='Type here'
+            onChange={saveInputMessage}
+            onKeyDown={handleKeyDown}
+            value={inputMessage}
+            autoFocus
+          />
             <button  className='sendBut' onClick={sendMessages} >Send</button>
             
           </div>
