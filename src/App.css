@@ -1,9 +1,10 @@
 
 
 .appDiv{
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
+  background-color: yellow;
+  display: grid;
+  grid-template-rows: 1fr 65px;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
   row-gap: 20px;
@@ -11,11 +12,12 @@
 }
 
 .inputDiv{
-  display: flex;
-  flex:1;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 1fr 100px;
   column-gap: 20px;
   max-height: fit-content;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .input{
@@ -25,7 +27,7 @@
   border-width: 1px;
   font-size: 20px;
   display: flex;
-  flex: 1;
+  min-width: 20px;
   
 }
 .sendBut{
@@ -58,7 +60,7 @@ img{
   background-color: rgb(222, 222, 255);
   padding: 10px 15px;
   border-radius: 10px;
-  max-width: 550px;
+  max-width: 70%;
   font-size: 20px;
   overflow-wrap: anywhere;
   margin-bottom: 20px;
@@ -73,30 +75,17 @@ img{
   overflow-y: scroll;
   scrollbar-width: none;
   margin-top: 20px;
-  
+  padding-right: 20px;
+  padding-left: 20px
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .appDiv{
-    max-width: 850px;
+    width: 97%;
+    grid-template-rows: 1fr 60px;
   }
-  .inputDiv{
-    column-gap: 20px;
+  .input, .sendBut{
+    padding: 10px;
   }
-  .message{
-    max-width: 550px;
-  }
-  img{
-    width: 55px;
-    height: 55px;
-  }
+  
 }
-  .user{
-    column-gap: 10px;
-  }
-    
-  
-  .robot{
-    column-gap: 10px;
-  }
-  
