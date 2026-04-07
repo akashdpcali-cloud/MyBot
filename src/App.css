@@ -85,5 +85,8 @@ img{
   .input, .sendBut{
     padding: 10px;
   }
-  
+  img{
+    width: 40px;
+    height: 40px;
+  }
 }
