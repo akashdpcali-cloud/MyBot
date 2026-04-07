@@ -90,4 +90,7 @@ img{
     padding-right: 10px;
     padding-left: 10px
   }
+  .user, .robot{
+    column-gap:10px;
+  }
 }
