@@ -30,6 +30,7 @@
   display: flex;
   min-width: 20px;
   height: fit-content;
+  font-family: arial;
   
 }
 .sendBut{
