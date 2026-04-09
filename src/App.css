@@ -11,6 +11,9 @@
 
 .inputDiv{
   position: fixed;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
   display: grid;
   grid-template-columns: 1fr 100px;
   column-gap: 20px;
