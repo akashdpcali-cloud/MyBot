@@ -66,15 +66,16 @@ export function ChatInput({ setChatMessages}){
         return (
           <div className='inputDiv'>
 
-            <input
-            ref={inputRef}
-            className='input'
-            placeholder='Type here'
-            onChange={saveInputMessage}
-            onKeyDown={handleKeyDown}
-            value={inputMessage}
-            autoFocus
-          />
+            <textarea  
+             ref={inputRef}  
+             className="input"  
+             placeholder="Ask MyBot"  
+             onChange={saveInputMessage}  
+             onKeyDown={handleKeyDown}  
+             value={inputMessage}  
+             autoFocus  
+             rows={1}
+           />
             <button  className='sendBut' onClick={sendMessages} >Send</button>
             
           </div>
