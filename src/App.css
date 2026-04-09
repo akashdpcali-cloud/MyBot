@@ -6,9 +6,11 @@
   margin-right: auto;
   row-gap: 20px;
   height: 100vh;
+  position: relative;
 }
 
 .inputDiv{
+  position: fixed;
   display: grid;
   grid-template-columns: 1fr 100px;
   column-gap: 20px;
