@@ -9,10 +9,8 @@ export function ChatInput({ setChatMessages}){
         }, []);
 
         function saveInputMessage(event){
-          const e1= event.target;
-          el.style.height = "auto";  
-          el.style.height = el.scrollHeight + "px";
-          setInputMessage(e1.value);
+          
+          setInputMessage(event.target.value);
         }
 
         function handleKeyDown(event){
