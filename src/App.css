@@ -29,6 +29,7 @@
   font-size: 20px;
   display: flex;
   min-width: 20px;
+  height: fit-content;
   
 }
 .sendBut{
@@ -38,6 +39,7 @@
   font-size: 20px;
   padding: 10px 25px;
   border-radius: 7px;
+  max-height: 100px;
 }
 
 img{
