@@ -90,6 +90,7 @@ img{
   
   .input, .sendBut{
     padding: 10px;
+    font-size: 12px;
   }
   img{
     width: 40px;
@@ -98,6 +99,9 @@ img{
   .messageDiv{
     padding-right: 10px;
     padding-left: 10px
+  }
+  .message{
+    font-size: 12px;
   }
   .user, .robot{
     column-gap:10px;
