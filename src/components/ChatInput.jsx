@@ -15,6 +15,7 @@ export function ChatInput({ setChatMessages}){
 
         function handleKeyDown(event){
           if(event.key === 'Enter'){
+            event.preventDefault();
             sendMessages();
           }
         }
