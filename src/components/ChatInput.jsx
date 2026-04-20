@@ -24,7 +24,7 @@ export function ChatInput({ setChatMessages}){
           const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
             method: "POST",
             headers: {
-              "Authorization": "Bearer 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", 
+              "Authorization": "Bearer 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", 
               "Content-Type": "application/json"
             },
             body: JSON.stringify({
