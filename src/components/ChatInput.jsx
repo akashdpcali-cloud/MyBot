@@ -21,20 +21,31 @@ export function ChatInput({ setChatMessages}){
         }
 
         async function getAIResponse(inputMessage) {
-          const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
-            method: "POST",
-            headers: {
-              "Authorization": "Bearer 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", 
-              "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-              model: "llama-3.3-70b-versatile",
-              messages: [
-                { role: "user", content: inputMessage }
-              ]
-            })
-          });
+  const res = await fetch(
+    "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=AIzaSyDLFwKp7g5SWsTEQVJmChs0St8mzJzj8r4",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        contents: [
+          {
+            parts: [
+              { text: inputMessage }
+            ]
+          }
+        ]
+      })
+    }
+  );
 
+  const data = await res.json();
+
+  return data.candidates?.[0]?.content?.parts?.[0]?.text || "No response";
+}
+
+        
           const data = await res.json();
           return data.choices[0].message.content;
         }
