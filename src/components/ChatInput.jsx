@@ -22,7 +22,7 @@ export function ChatInput({ setChatMessages}){
 
         async function getAIResponse(inputMessage) {
   const res = await fetch(
-    "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=AIzaSyDLFwKp7g5SWsTEQVJmChs0St8mzJzj8r4",
+    "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=AIzaSyC9aTz5UGZlgDZx5NluMT0JDpBUhCDWRhc",
     {
       method: "POST",
       headers: {
